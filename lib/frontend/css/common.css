@@ -1,0 +1,6 @@
+.wp-block-navigation>ul>li:first-of-type>a{
+	padding-left: 0 !important; /* fix priority bug in Default Gutenberg Styles */
+}
+.wp-block-navigation>ul>li:last-of-type>a{
+	padding-right: 0 !important; /* fix priority bug in Default Gutenberg Styles */
+}
