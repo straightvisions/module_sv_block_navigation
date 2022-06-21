@@ -9,8 +9,8 @@
 	);
 
 	echo $_s->build_css(
-		is_admin() ? '.editor-styles-wrapper .wp-block-navigation a' : '.wp-block-navigation a',
+		is_admin() ? '.editor-styles-wrapper .wp-block-navigation .wp-block-navigation__container' : '.wp-block-navigation .wp-block-navigation__container',
 		array_merge(
-			$module->get_setting('font')->get_css_data('font-family')
+			$module->get_setting('gap')->get_css_data('gap','','px')
 		)
 	);

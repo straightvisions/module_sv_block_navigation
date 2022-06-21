@@ -17,13 +17,6 @@
 		}
 
 		protected function load_settings(): sv_block_navigation {
-			$this->get_setting( 'font' )
-				->set_title( __( 'Font Family', 'sv100' ) )
-				->set_description( __( 'Choose a font for your text.', 'sv100' ) )
-				->set_options( $this->get_module( 'sv_webfontloader' ) ? $this->get_module( 'sv_webfontloader' )->get_font_options() : array('' => __('Please activate module SV Webfontloader for this Feature.', 'sv100')) )
-				->set_is_responsive(true)
-				->load_type( 'select' );
-
 			$this->get_setting( 'margin' )
 				->set_title( __( 'Margin', 'sv100' ) )
 				->set_is_responsive(true)
@@ -45,20 +38,29 @@
 				->set_is_responsive(true)
 				->load_type( 'border' );
 
-			return $this;
-		}
-		public function enqueue_scripts(): sv_block_navigation {
-			if(!$this->has_block_frontend('navigation')){
-				return $this;
-			}
+			$this->get_setting( 'gap' )
+			     ->set_title( __( 'Gap', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'number' );
 
-			if(!is_admin()){
-				$this->load_settings()->register_scripts();
-			}
+			// Navigation Item
+			$this->get_setting( 'navigation_item_font' )
+			     ->set_title( __( 'Font Family', 'sv100' ) )
+			     ->set_description( __( 'Choose a font for your text.', 'sv100' ) )
+			     ->set_options( $this->get_module( 'sv_webfontloader' ) ? $this->get_module( 'sv_webfontloader' )->get_font_options() : array('' => __('Please activate module SV Webfontloader for this Feature.', 'sv100')) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'select' );
 
-			foreach($this->get_scripts() as $script){
-				$script->set_is_enqueued();
-			}
+			$this->get_setting( 'navigation_item_margin' )
+			     ->set_title( __( 'Margin', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'margin' );
+
+
+			$this->get_setting( 'navigation_item_padding' )
+			     ->set_title( __( 'Padding', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'margin' );
 
 			return $this;
 		}

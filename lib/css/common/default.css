@@ -164,22 +164,6 @@
 	left: auto;
 	right: 100%;
 }
-
-.wp-block-navigation.wp-block-navigation .wp-block-page-list,
-.wp-block-navigation.wp-block-navigation .wp-block-page-list > .wp-block-pages-list__item,
-.wp-block-navigation.wp-block-navigation .wp-block-navigation__container > .wp-block-navigation-link {
-	margin: 0 2em 0 0;
-}
-.wp-block-navigation.wp-block-navigation .wp-block-page-list:last-child,
-.wp-block-navigation.wp-block-navigation .wp-block-page-list > .wp-block-pages-list__item:last-child,
-.wp-block-navigation.wp-block-navigation .wp-block-navigation__container > .wp-block-navigation-link:last-child {
-	margin-right: 0;
-}
-.wp-block-navigation.wp-block-navigation.has-background .wp-block-page-list,
-.wp-block-navigation.wp-block-navigation.has-background .wp-block-page-list > .wp-block-pages-list__item,
-.wp-block-navigation.wp-block-navigation.has-background .wp-block-navigation__container > .wp-block-navigation-link {
-	margin: 0 0.5em 0 0;
-}
 .wp-block-navigation.wp-block-navigation.has-background .wp-block-page-list .wp-block-pages-list__item__link,
 .wp-block-navigation.wp-block-navigation.has-background .wp-block-navigation__container .wp-block-navigation-link__content {
 	padding: 0.5em 1em;
