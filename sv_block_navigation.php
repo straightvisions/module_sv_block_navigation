@@ -69,6 +69,23 @@
 			     ->set_is_responsive(true)
 			     ->load_type( 'select' );
 
+			$this->get_setting( 'navigation_item_font_size' )
+			     ->set_title( __( 'Font Size', 'sv100' ) )
+			     ->set_description( __( 'Font Size in Pixel', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'number' );
+
+			$this->get_setting( 'navigation_item_line_height' )
+			     ->set_title( __( 'Line Height', 'sv100' ) )
+			     ->set_description( __( 'Set line height as multiplier or with a unit.', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'text' );
+
+			$this->get_setting( 'navigation_item_text_color' )
+			     ->set_title( __( 'Text Color', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'color' );
+
 			$this->get_setting( 'navigation_item_margin' )
 			     ->set_title( __( 'Margin', 'sv100' ) )
 			     ->set_is_responsive(true)

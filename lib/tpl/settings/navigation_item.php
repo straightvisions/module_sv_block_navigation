@@ -5,6 +5,13 @@
 		<div class="sv_setting_flex">
 			<?php
 				echo $module->get_setting( 'navigation_item_font' )->form();
+				echo $module->get_setting( 'navigation_item_font_size' )->form();
+				echo $module->get_setting( 'navigation_item_line_height' )->form();
+				echo $module->get_setting( 'navigation_item_text_color' )->form();
+			?>
+		</div>
+		<div class="sv_setting_flex">
+			<?php
 				echo $module->get_setting( 'navigation_item_margin' )->form();
 				echo $module->get_setting( 'navigation_item_padding' )->form();
 			?>
