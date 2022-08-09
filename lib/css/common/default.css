@@ -25,7 +25,6 @@
 	display: none
 }
 .wp-block-navigation .wp-block-navigation-item__content {
-	display: block;
 	padding: 0
 }
 .wp-block-navigation.has-text-decoration-underline .wp-block-navigation-item__content, .wp-block-navigation.has-text-decoration-underline .wp-block-navigation-item__content:active, .wp-block-navigation.has-text-decoration-underline .wp-block-navigation-item__content:focus {
@@ -296,10 +295,6 @@ button.wp-block-navigation-item__content {
 	align-items: var(--navigation-layout-justification-setting, initial);
 	display: flex;
 	flex-direction: column
-}
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item, .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item .wp-block-navigation__submenu-container, .wp-block-navigation__responsive-container.is-menu-open .wp-block-page-list {
-	background: #0000 !important;
-	color: inherit !important
 }
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container {
 	left: auto;

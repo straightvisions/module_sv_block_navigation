@@ -16,24 +16,6 @@
 				->get_root()
 				->add_section( $this );
 		}
-		protected function register_scripts(): sv_block_navigation {
-			parent::register_scripts();
-
-			$this->get_script('link')
-			     ->set_path('lib/css/common/link.css')
-			     ->set_is_gutenberg()
-			     ->set_inline();
-
-			if(!is_admin()) {
-				add_action( 'wp_enqueue_scripts', function () { wp_dequeue_style( 'wp-block-navigation-link' ); } );
-			}else{
-				$this->get_script('link')
-				     ->set_ID('wp-block-navigation-link')
-				     ->set_is_no_prefix();
-			}
-
-			return $this;
-		}
 		protected function load_settings(): sv_block_navigation {
 			$this->get_setting( 'margin' )
 				->set_title( __( 'Margin', 'sv100' ) )
