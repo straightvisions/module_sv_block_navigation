@@ -1,6 +1,6 @@
 <?php
 	echo $_s->build_css(
-		'.wp-block-navigation .wp-block-navigation__container > .wp-block-navigation-link',
+		'.wp-block-navigation .wp-block-navigation__container .wp-block-navigation-item',
 		array_merge(
 			$module->get_setting('navigation_item_font')->get_css_data('font-family'),
 			$module->get_setting('navigation_item_font_size')->get_css_data('font-size','','px'),

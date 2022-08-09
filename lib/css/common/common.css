@@ -2,13 +2,6 @@
 	list-style-type:none;
 }
 
-.wp-block-navigation.is-horizontal > ul > li:first-of-type > a{
-	padding-left: 0 !important; /* fix priority bug in Default Gutenberg Styles */
-}
-.wp-block-navigation.is-horizontal > ul > li:last-of-type > a{
-	padding-right: 0 !important; /* fix priority bug in Default Gutenberg Styles */
-}
-
 .wp-block-navigation.is-vertical > ul > li.wp-block-navigation-link{
 	display:block;
 }
