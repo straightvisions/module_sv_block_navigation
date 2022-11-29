@@ -360,7 +360,6 @@ button.wp-block-navigation-item__content {
 	display: flex;
 	flex-direction: column;
 	background-color: inherit;
-	padding: 2rem;
 	overflow: auto;
 	z-index: 100000;
 }
