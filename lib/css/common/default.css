@@ -418,13 +418,6 @@ button.wp-block-navigation-item__content {
 	align-items: var(--navigation-layout-justification-setting, initial);
 }
 
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item .wp-block-navigation__submenu-container,
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item,
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-page-list {
-	color: inherit !important;
-	background: transparent !important;
-}
-
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container {
 	right: auto;
 	left: auto;
