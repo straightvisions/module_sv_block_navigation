@@ -166,10 +166,6 @@
 	.wp-block-navigation .has-child :where(.wp-block-navigation__submenu-container) .wp-block-navigation__submenu-icon {
 		margin-right: 0.25em;
 	}
-	
-	.wp-block-navigation .has-child :where(.wp-block-navigation__submenu-container) .wp-block-navigation__submenu-icon svg {
-		transform: rotate(-90deg);
-	}
 }
 
 .wp-block-navigation .has-child:where(:not(.open-on-click)):hover > .wp-block-navigation__submenu-container {
@@ -361,7 +357,6 @@ button.wp-block-navigation-item__content {
 	flex-direction: column;
 	background-color: inherit;
 	overflow: auto;
-	z-index: 100000;
 }
 
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
