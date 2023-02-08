@@ -33,11 +33,6 @@
 				->set_is_responsive(true)
 				->load_type( 'margin' );
 
-			$this->get_setting( 'border' )
-				->set_title( __( 'Border', 'sv100' ) )
-				->set_is_responsive(true)
-				->load_type( 'border' );
-
 			$this->get_setting( 'gap' )
 			     ->set_title( __( 'Gap', 'sv100' ) )
 			     ->set_is_responsive(true)
